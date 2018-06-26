@@ -1,0 +1,149 @@
+button{
+  border:none;
+  background-image:none;
+  background-color:transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  &:active{
+    outline: none;
+  }
+  &:hover{
+    outline: none;
+  }
+
+}
+.button-primary, input[type=submit] {
+  line-height: 1.5;
+  padding: 10px 19px;
+  display: inline-block;
+  font-size: $header-size / 1.7;
+  font-weight: 200;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  background: $brand-two;
+  margin: 0.5rem 0 0 0;
+  border: none;
+  color: $white;
+  font-family: $header-font-family;
+  @media only screen and (max-width: 1500px) {
+    padding: 7.5px 15px;
+    font-size: $header-size / 2;
+
+  }
+
+  &:hover {
+    background-color: $brand-one;
+    color: $white;
+    outline: none;
+
+  }
+  &:active,&.focus {
+    background-color: $brand-one;
+    color: $white;
+    outline: none;
+
+  }
+
+  &:focus {
+    background-color: $brand-six;
+    color: $white;
+    outline: none;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 15px 25px;
+  }
+
+}
+
+input[type=submit] {
+  width: auto;
+  float: right;
+  border: none;
+}
+
+input[type=number] {
+  width: 100%;
+  color: $white;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $white;
+
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: $white;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  color: $white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: $white;
+}
+
+.button-primary.choices {
+  background-color: $lightestgrey;
+  color: $brand-one;
+  margin: 0.5rem 0 0 0;
+  border: none;
+  font-size: $header-size / 1.7;
+  &:hover {
+    background-color: $brand-one;
+    color: $white;
+  }
+  &:active,&.focus {
+    background-color: $brand-one;
+    color: $white;
+  }
+
+  &:focus {
+    background-color: $brand-one;
+    color: $white;
+    outline: none;
+  }
+}
+.button-secondary{
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: $header-size / 1.7;
+  font-weight: 200;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  margin: 0.5rem 0 0 0;
+  color: $brand-two;
+  border: 1px solid $brand-two;
+  font-family: $header-font-family;
+
+  &:hover {
+    background-color: $brand-one;
+    color: $white;
+    outline: none;
+
+  }
+  &:active {
+    background-color: $brand-one;
+    color: $white;
+    outline: none;
+
+  }
+
+  &:focus {
+    background-color: $brand-six;
+    color: $white;
+    outline: none;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 15px 25px;
+  }
+}

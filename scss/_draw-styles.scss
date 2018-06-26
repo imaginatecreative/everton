@@ -1,0 +1,257 @@
+//GENERAL DRAW STYLES
+.block.draw {
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+  min-width: 250px;
+  display: inline-flex;
+  justify-content: space-between;
+  flex: 1 1 30%;
+  @media only screen and (max-width: 1300px) {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+  }
+  @media only screen and (max-width: 750px) {
+    min-height: 65vh;
+
+  }
+  & > div {
+    padding: 1rem;
+
+  }
+  & .text-left {
+    text-align: left;
+  }
+  .inner_top {
+    padding: 1rem;
+  }
+  .inner_mid {
+    padding: 1rem;
+  }
+  .inner_bottom {
+    padding: 1rem;
+  }
+}
+
+//JUST FOR THE HOME PANEL
+.block.home {
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+  }
+  *:not(a) {
+    margin: 0;
+  }
+  & > div {
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: 1000px) {
+      width: 29%;
+    }
+    @media only screen and (max-width: 750px) {
+      width: 100%;
+    }
+  }
+  .inner_top {
+    background-color: $white;
+    flex: 1 1 30%;
+    h3 {
+      color: $brand-three;
+      font-family: $font-family;
+    }
+    h1 {
+      color: $brand-two;
+      margin-bottom: 1rem;
+    }
+    h5{
+      color:$lightgrey;
+    }
+    a {
+      color: $lightgrey;
+    }
+    @media only screen and (max-width: 1000px) {
+      flex: 1 1 50%;
+      width: 50%;
+      order: 3;
+      border: 1px solid $brand-one;
+    }
+    @media only screen and (max-width: 600px) {
+      flex: 1 1 100%;
+      width: 100%;
+      order: 1;
+    }
+  }
+  .inner_mid {
+    flex: 1 1 30%;
+    background: linear-gradient(to right, rgba($brand-one, 0.8) 0%, rgba($brand-one, 0.8) 100%), url("../img/hero-three.jpg") center center / cover no-repeat;
+    h4 {
+      font-weight: 300;
+    }
+    * {
+      color: $white;
+    }
+    .verses {
+      img {
+        display: inline-block;
+        max-width: 100px;
+      }
+      p, h1, h2, h3, h4, h5, h6 {
+        display: inline-block;
+      }
+    }
+    @media only screen and (max-width: 1000px) {
+      flex: 1 1 50%;
+      width: 50%;
+      order: 2;
+    }
+    @media only screen and (max-width: 600px) {
+      flex: 1 1 100%;
+      width: 100%;
+      order: 2;
+    }
+
+  }
+  .inner_bottom {
+    flex: 1 1 30%;
+    background-color: $white;
+
+    h5{
+      margin: 1rem 0;
+    }
+    h3{
+      font-family: $font-family;
+      color: $brand-three;
+
+    }
+    @media only screen and (max-width: 1000px) {
+      flex: 1 1 100%;
+      width: 100%;
+      order: 1;
+    }
+    @media only screen and (max-width: 600px) {
+      order: 3;
+
+    }
+  }
+}
+
+//STEP ONE
+.block.step-one {
+  flex-direction: row;
+  .inner_top, .inner_mid, .inner_bottom {
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    @media only screen and (max-width: 1000px) {
+      padding: 0 1rem;
+    }
+  }
+  .inner_top {
+    //flex: 1 1 25%;
+    h3{
+      font-family: $font-family;
+      color: $brand-three;
+    }
+    h2{
+      font-family: $font-family;
+      color: $brand-three;
+    }
+    @media only screen and (max-width: 750px) {
+      flex: 1 1 5%;
+    }
+  }
+  .inner_mid {
+
+    //flex: 1 1 40%;
+    h2{
+      color: $brand-two;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    h5{
+      font-family: $header-font-family;
+
+    }
+    input[type=number] {
+      width: 130px;
+    }
+    .options-wrap {
+      width: 100%;
+    }
+    @media only screen and (max-width: 750px) {
+      //flex: 1 1 50%;
+    }
+  }
+  .inner_bottom {
+    //flex: 1 1 25%;
+    h6{
+      color: $brand-four;
+    }
+
+  }
+}
+
+//STEP TWO
+.block.step-two {
+  form {
+    margin-top: 0.5rem;
+
+
+  }
+}
+
+//STEP THREE
+.block.step-three {
+  .embed-container {
+    flex: 1 1 80%;
+    @media only screen and (max-width: 1000px) {
+      min-height: 700px;
+    }
+  }
+  .inner {
+    flex: 1 1 20%;
+    border-top: 1px solid $brand-one;
+  }
+
+}
+
+//STEP FOUR
+.block.step-four {
+  .inner_top, .inner_mid, .inner_bottom {
+    flex: 1 1 30%;
+  }
+  .inner_top {
+
+  }
+  .inner_mid {
+    display: inherit;
+    flex-direction: column;
+    .social {
+      margin-bottom: 1rem;
+      button {
+        background: $brand-one;
+        padding: 0.5rem;
+        border-radius: 60%;
+        &:before {
+          color: $white;
+        }
+      }
+    }
+    hr {
+      margin: auto auto 0 auto;
+      width: 90%;
+      justify-self: center;
+    }
+  }
+  .inner_bottom {
+  }
+}
