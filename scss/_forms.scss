@@ -181,7 +181,12 @@ input.inputMaterial.not-required ~ label{
   color: $brand-one;
 
 }
-
+.tabbed {
+  label {
+    top: 0;
+    left: 0;
+  }
+}
 .select-style select:focus {
   outline: none;
 }
