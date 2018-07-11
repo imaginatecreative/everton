@@ -29,6 +29,7 @@
       }
     }
     .inner_slide {
+      min-height: 400px;
       padding: 2rem 6rem 2rem 2rem;
       @media only screen and (max-width: 600px) {
         padding: 1rem;
@@ -64,6 +65,7 @@
     max-width: 75%;
     @media only screen and (max-width: 600px) {
       padding: 1rem;
+      max-width: 100%;
       &:after{
         display: none;
       }
