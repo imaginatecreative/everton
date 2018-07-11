@@ -161,15 +161,15 @@ h1, h2, h3, h4, h5, h6 {
 //
 // Styleguide typography.heading-one
 h1 {
-  font-size: $header-size * 1.7;
+  font-size: $header-size * 1.2;
   @media only screen and (max-width: 1200px) {
-    font-size: $header-size * 1.2;
+    font-size: $header-size * 1.1;
   }
   @media only screen and (max-width: 600px) {
-    font-size: $header-size / 1.2;
+    font-size: $header-size / 1.1;
   }
   strong {
-    font-size: $header-size * 1.7;
+    font-size: $header-size * 1.2;
     font-weight: 800;
   }
 }
