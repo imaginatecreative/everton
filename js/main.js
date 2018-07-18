@@ -1,5 +1,4 @@
-(function ($) {
-
+$(function() {
 
 
     $.fn.autoTab = function() {
@@ -132,9 +131,7 @@
             autoTabOn = true;
             $('#autotab-toggle').addClass('on');
         }
-    })
-
-
+    });
     $('.slider').slick({
         slidesToScroll: 1,
         autoplay: true,
@@ -143,7 +140,6 @@
         dots: false,
         fade: true,
     });
-
     $('.ticker').slick({
         slidesToShow: 5,
         arrows: false,
@@ -151,7 +147,7 @@
         autoplay: true,
         autoplaySpeed: 1000,
         pauseOnHover:true,
-        speed: 8000,
+        // speed: 8000,
         cssEase:'linear',
         responsive: [
             {
@@ -181,7 +177,11 @@
             // settings: "unslick"
             // instead of a settings object
         ]
-    });    $(document).load($(window).bind("resize", checkPosition));
+    });
+
+    $(document).on('load', function() {
+        $(window).on("resize", checkPosition);
+    });
 
     function checkPosition() {
         if (window.matchMedia('(max-width: 1000px)').matches) {
@@ -192,7 +192,7 @@
         }
     }
 
-})(jQuery); // Fully reference jQuery after this point.
+});
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
